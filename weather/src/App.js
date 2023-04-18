@@ -33,6 +33,7 @@ const App = () => {
   };
 
   return (
+    
     <div className="main-container">
       <input
         type="text"
@@ -62,6 +63,9 @@ const App = () => {
               alt="weather icon"
             />
             <p>{weather.weather[0].description}</p>
+            <p className="minMax">Min temp: {weather.main.temp_min} <sup>&deg; c </sup>, {Math.round((weather.main.temp_min * 9) / 5 + 32)} <sup>&deg; f</sup> </p> 
+            
+            <p className="minMax">Max temp: {weather.main.temp_max} <sup>&deg; c</sup> , {Math.round((weather.main.temp_max * 9) / 5 + 32)} <sup>&deg; f</sup>  </p>
           </div>
         </div>
       )}
