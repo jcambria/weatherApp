@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { getWeather } from "./api/getWeather";
 import "./App.css";
 import CityNameHeader from "./CityNameHeader";
-import ShowFarenheit from "./ShowFarenheit";
+import PerhapsFarenheit from "./PerhapsFarenheit";
 
 const App = () => {
   const [query, setQuery] = useState("");
@@ -55,7 +55,7 @@ const App = () => {
             {Math.round(weather.main.temp)}
             <sup>&deg; C</sup>
 
-            <ShowFarenheit weather={weather} farenheit={fahrenheit} />
+            <PerhapsFarenheit weather={weather} farenheit={fahrenheit} />
             <button onClick={() => toggleFahrenheitButton()}>
               {buttonText()}
             </button>

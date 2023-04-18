@@ -1,6 +1,6 @@
 import React from "react";
 
-function ShowFarenheit({ weather, farenheit }) {
+function PerhapsFarenheit({ weather, farenheit }) {
   if (farenheit) {
     return (
       <div className="city-temp">
@@ -14,4 +14,4 @@ function ShowFarenheit({ weather, farenheit }) {
   }
 }
 
-export default ShowFarenheit;
+export default PerhapsFarenheit;
