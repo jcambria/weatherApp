@@ -1,10 +1,12 @@
 import React from "react";
 
 function PerhapsFarenheit({ weather, farenheit }) {
+
   if (farenheit) {
+    const converted =  Math.round((weather.main.temp * 9) / 5 + 32)
     return (
       <div className="city-temp">
-        {Math.round((weather.main.temp * 9) / 5 + 32)}
+        {converted}
 
         <sup>&deg; F</sup>
       </div>

@@ -13,20 +13,15 @@ const App = () => {
   const search = async (e) => {
     if (e.key == "Enter") {
       const data = await getWeather(query);
-      // console.log(data)
       setWeather(data);
       setQuery("");
     }
   };
 
-  const computeF = () => {
-    Math.round((weather.main.temp * 9) / 5 + 32);
-  };
 
   const toggleFahrenheitButton = () => {
     setFahrenheit(!fahrenheit);
 
-    console.log(Math.round((weather.main.temp * 9) / 5 + 32));
   };
 
   const buttonText = () => {
@@ -56,7 +51,7 @@ const App = () => {
             <sup>&deg; C</sup>
 
             <PerhapsFarenheit weather={weather} farenheit={fahrenheit} />
-            <button onClick={() => toggleFahrenheitButton()}>
+            <button id="showFahrenheit" onClick={() => toggleFahrenheitButton()}>
               {buttonText()}
             </button>
           </div>
