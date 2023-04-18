@@ -4,10 +4,11 @@ html, body, #root {
     color: #1e2432;
     height: 100%;
     margin: 0;
+    position: relative;
 }
 
 .main-container {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://seec.house.gov/sites/sustainableenergyandenvironmentcoalitioncaucus.house.gov/files/featured_image/issues/climate-change-tree.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url('https://seec.house.gov/sites/sustainableenergyandenvironmentcoalitioncaucus.house.gov/files/featured_image/issues/climate-change-tree.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -125,6 +126,7 @@ background-color: #007bff;
 @media only screen and (max-width: 200px) {
     .search {
         padding: 10px 5%;
+        width: 200px;
     }
 
     .city {
