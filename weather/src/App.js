@@ -34,7 +34,10 @@ const App = () => {
 
   return (
     
+    
     <div className="main-container">
+      <h2 className="title">Find The Temp </h2>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"></meta>
       <input
         type="text"
         className="search"
